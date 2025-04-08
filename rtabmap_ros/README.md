@@ -182,7 +182,9 @@ If you see the following messages on the ```rtab-map``` terminal, it means that 
 [ERROR] (2025-04-08 10:36:37.335) Rtabmap.cpp:1406::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1766 is ignored!
 ```
 
-<div align="center"><img src="rtabmap_ros/RTAB-Map-Stereo_Inertial.gif" width=600px/></div>
+![RTAB-Map Stereo Inertial Demo](rtabmap_ros/RTAB-Map-Stereo_Inertial.gif)
+
+<!-- <div align="center"><img src="rtabmap_ros/RTAB-Map-Stereo_Inertial.gif" width=600px/></div> -->
 
 
 
