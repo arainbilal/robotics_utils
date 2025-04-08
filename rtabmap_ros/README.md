@@ -13,7 +13,7 @@ This note provides a Dockerized setup for running [RTAB-Map ROS](https://github.
 - ✅ Example mapping configuration
 
 
-<div align="center"><img src="resource/rtabmap_rgbd_handheld.gif" width=800px/></div>
+<div align="center"><img src="../resource/rtabmap_rgbd_handheld.gif" width=800px/></div>
 
 ---
 
