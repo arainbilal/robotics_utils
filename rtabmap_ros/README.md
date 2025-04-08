@@ -139,8 +139,9 @@ source /opt/ros/noetic/setup.bash
 ### 🔌 Launch DepthAI (OAK-D) Nodes
 
 ```
-roslaunch depthai_examples stereo_inertial_node.launch
+roslaunch depthai_examples stereo_inertial_node.launch depth_aligned:=true
 ```
+**Note:** `depth_aligned:=false` can be used for the stereo version and will publish the rectified left/right images.
 
 ### 🧭 Estimate quaternion of the IMU data
 
@@ -182,10 +183,11 @@ If you see the following messages on the ```rtab-map``` terminal, it means that 
 [ERROR] (2025-04-08 10:36:37.335) Rtabmap.cpp:1406::process() RGB-D SLAM mode is enabled, memory is incremental but no odometry is provided. Image 1766 is ignored!
 ```
 
-![RTAB-Map Stereo Inertial Demo](rtabmap_ros/RTAB-Map-Stereo_Inertial.gif)
+<div align="center"><img src="resource/rtabmap_rgbd_handheld.gif" width=800px/></div>
 
-<!-- <div align="center"><img src="rtabmap_ros/RTAB-Map-Stereo_Inertial.gif" width=600px/></div> -->
+## 🔮 Future Work
 
+The visual odometry can be performed outside the RTAB-Map and will make the overall system more robust. There are various VINS odometry and some are provided in the references. If you would like to contribute, then perform the odometry outside the RTAB-Map using one of the references. 
 
 
 ## 📬 Need Help or Would like to add? Open an Issue
@@ -203,3 +205,6 @@ If you run into any problems or have questions, feel free to open an issue on th
 * [RTAB-Map ROS Wiki](http://wiki.ros.org/rtabmap_ros)
 * [Luxonis DepthAI ROS](https://github.com/luxonis/depthai-ros)
 * [RTAB-Map Tutorials](http://wiki.ros.org/rtabmap_ros/Tutorials)
+* [RTAB-Map issues](https://github.com/introlab/rtabmap/issues/742#issuecomment-1121281584)
+* [VINS-Fusion](https://github.com/HKUST-Aerial-Robotics/VINS-Fusion.git)
+
